@@ -190,7 +190,7 @@ gulp.task('libs_js', () => {
 
 gulp.task('dev_js', () => {
 	return gulp
-		.src(['src/js/*.js', 'src/components/bem-blocks/**/*.js', 'src/page/**/*.js'])
+		.src(['src/js/*.js', 'src/components/**/*.js', 'src/page/**/*.js'])
 		.pipe(map.init())
 		.pipe(uglify())
 		.pipe(concat('main.min.js'))

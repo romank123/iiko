@@ -6,7 +6,7 @@
             <img src="/img/logo-iiko.svg" alt="">
         </div>
 
-        <div class="menu pl-16">
+        <div class="menu pl-16 hidden md:block">
 
             <ul class="font-GothamProRegular text-base text-black uppercase flex">
                 <li class="px-6"><a href="">о компании</a></li>
@@ -17,8 +17,14 @@
 
         </div>
 
-        <div class="button">
+        <div class="button hidden lg:block">
             <button class="font-GothamProBold text-base uppercase color-f8 py-3 px-6 rounded-3xl">заказать звонок</button>
+        </div>
+
+        <div class="relative md:hidden">
+
+        @@include('../burger/burger.html')
+
         </div>
 
 

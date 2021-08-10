@@ -25,6 +25,19 @@
     border-image: linear-gradient( 172deg, rgb(152,224,95) 0%, rgb(13,227,172) 100%);
     border-image-slice: 1;
   }
+
+  .text-12 {
+    font-size: 14px;
+  }
+
+  .text-14 {
+    font-size: 14px;
+  }
+
+  .text-18 {
+    font-size: 18px;
+  }
+
   .text-22 {
     font-size: 22px;
   }
@@ -33,10 +46,13 @@
     font-size: 23px;
   }
 
+  .text-28 {
+    font-size: 28px;
+  }
+
   .text-32 {
     font-size: 32px;
   }
-
 
   .text-57 {
     font-size: 57px;
@@ -65,5 +81,13 @@
   .leading-40 {
     line-height: 40px;
   }
+  .gradient-color{
+    color: transparent;
+    background-image: linear-gradient( 172deg, rgb(152,224,95) 0%, rgb(13,227,172) 100%);
+    background-clip: text;
+    text-fill-color: transparent;
+
+  }
+
 
 }

@@ -1,0 +1,34 @@
+.tarif
+  .select
+    position: relative
+    display: inline-block
+
+  .select:after
+    content: "\02C5"
+    padding: 0 8px
+    position: absolute
+    right: 8px
+    top: 10px
+    z-index: 1
+    text-align: center
+    pointer-events: none
+    box-sizing: border-box
+
+  select
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+
+  .bg-gradient
+    background: linear-gradient(172deg, #98e05f 0%, #0de3ac 100%)
+
+  span.title
+    position: relative
+
+  span.title:before
+    content: ""
+    position: absolute
+    left: -19px
+    width: 19px
+    height: 14px
+    background: url("../img/check.svg") no-repeat center center
