@@ -1,6 +1,13 @@
 .main-banner
   .main-title
-    width: 644px
+    @media (min-width: 320px)
+      width: 100%
+
+    @media (min-width: 768px)
+      width: 565px
+
+    @media (min-width: 1320px)
+      width: 650px
 
   button
     background: linear-gradient( 172deg, rgb(152,224,95) 0%, rgb(13,227,172) 100%)

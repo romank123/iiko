@@ -1,4 +1,6 @@
 .tarif
+  .card
+    //min-width: 300px
   .select
     position: relative
     display: inline-block
@@ -24,11 +26,15 @@
 
   span.title
     position: relative
+    padding-left: 35px
 
   span.title:before
+    display: flex
+    align-self: center
     content: ""
     position: absolute
-    left: -19px
+    top: 0
+    bottom: 0
+    left: 0
     width: 19px
-    height: 14px
-    background: url("../img/check.svg") no-repeat center center
+    background: url("../img/check.png") no-repeat center center
