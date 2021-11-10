@@ -7,7 +7,7 @@
 </h1> 
 
 <strong><em>`Задача:`</em></strong> разработать адаптивный сайт под современные браузеры и мобильные устройства.<br>
-<strong><em>`Ссылка:`</em></strong> <a href="https://romank123.github.io/iiko/html/" target="_blank"> iiko.io</a>
+<strong><em>`Ссылка:`</em></strong> <a href="https://romank123.github.io/iiko/build/" target="_blank"> iiko.io</a>
 
 ## Технологии:
 * HTML5
