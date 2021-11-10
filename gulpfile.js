@@ -429,7 +429,7 @@ gulp.task('server_php', () => {
 gulp.task('deploy', () => {
 	return gulp
 		.src('build/**/*.*')
-		.pipe(gulp.dest('./'))
+		.pipe(gulp.dest('html/'))
 });
 
 gulp.task('watch_html', () => {
