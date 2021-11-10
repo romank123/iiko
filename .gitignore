@@ -8,4 +8,9 @@ node_modules/
 package.lock.json
 yarn.lock
 package-lock.json
-yarn.lock
+build/
+src/
+config.js
+gulpfile.js
+package.json
+tailwind.config.js
