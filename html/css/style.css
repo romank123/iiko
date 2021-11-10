@@ -1,0 +1,431 @@
+@charset "UTF-8";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .color-f8 {
+    color: #f8f8f8;
+  }
+  .color-a6 {
+    color: #a6a6a6;
+  }
+  .color-6b {
+    color: #6b6b6b;
+  }
+  .color-28 {
+    color: #282828;
+  }
+  .color-cc {
+    color: #cccccc;
+  }
+  .border-top-5 {
+    border-top: 5px solid;
+    border-image: linear-gradient(172deg, #98e05f 0%, #0de3ac 100%);
+    border-image-slice: 1;
+  }
+  .text-12 {
+    font-size: 12px;
+  }
+  .text-14 {
+    font-size: 14px;
+  }
+  .text-15 {
+    font-size: 15px;
+  }
+  .text-18 {
+    font-size: 18px;
+  }
+  .text-19 {
+    font-size: 19px;
+  }
+  .text-22 {
+    font-size: 22px;
+  }
+  .text-23 {
+    font-size: 23px;
+  }
+  .text-28 {
+    font-size: 28px;
+  }
+  .text-30 {
+    font-size: 30px;
+  }
+  .text-32 {
+    font-size: 32px;
+  }
+  .text-46 {
+    font-size: 46px;
+  }
+  .text-52 {
+    font-size: 52px;
+  }
+  .text-54 {
+    font-size: 54px;
+  }
+  .text-55 {
+    font-size: 55px;
+  }
+  .text-57 {
+    font-size: 57px;
+  }
+  .text-58 {
+    font-size: 58px;
+  }
+  .text-67 {
+    font-size: 67px;
+  }
+  .text-68 {
+    font-size: 68px;
+  }
+  .text-80 {
+    font-size: 80px;
+  }
+  .text-82 {
+    font-size: 82px;
+  }
+  .text-92 {
+    font-size: 92px;
+  }
+  .bgc-f4 {
+    background-color: #f4f4f4;
+  }
+  .bgc-f8 {
+    background-color: #f8f8f8;
+  }
+  .h-65 {
+    height: 65px;
+  }
+  .rounded-4xl {
+    border-radius: 32px;
+  }
+  .leading-40 {
+    line-height: 40px;
+  }
+  .gradient-color {
+    color: transparent;
+    background-image: linear-gradient(172deg, #98e05f 0%, #0de3ac 100%);
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+}
+
+@font-face {
+  font-family: "GothamProRegular";
+  src: url("../fonts/GothamProRegular/GothamProRegular.eot");
+  src: url("../fonts/GothamProRegular/GothamProRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProRegular/GothamProRegular.woff2") format("woff2"), url("../fonts/GothamProRegular/GothamProRegular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GothamProMedium";
+  src: url("../fonts/GothamProMedium/GothamProMedium.eot");
+  src: url("../fonts/GothamProMedium/GothamProMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProMedium/GothamProMedium.woff2") format("woff2"), url("../fonts/GothamProMedium/GothamProMedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GothamProLight";
+  src: url("../fonts/GothamProLight/GothamProLight.eot");
+  src: url("../fonts/GothamProLight/GothamProLight.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProLight/GothamProLight.woff2") format("woff2"), url("../fonts/GothamProLight/GothamProLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GothamProBold";
+  src: url("../fonts/GothamProBold/GothamProBold.eot");
+  src: url("../fonts/GothamProBold/GothamProBold.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProBold/GothamProBold.woff2") format("woff2"), url("../fonts/GothamProBold/GothamProBold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GothamProBlack";
+  src: url("../fonts/GothamProBlack/GothamProBlack.eot");
+  src: url("../fonts/GothamProBlack/GothamProBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProBlack/GothamProBlack.woff2") format("woff2"), url("../fonts/GothamProBlack/GothamProBlack.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* colors */
+html,
+body {
+  min-height: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.burger-menu__button {
+  top: 10px;
+  right: 10px;
+  z-index: 31;
+  width: 60px;
+  height: 42px;
+}
+
+.burger-menu__button:hover .burger-menu__lines {
+  filter: brightness(0.7);
+}
+
+.burger-menu__lines,
+.burger-menu__lines::after,
+.burger-menu__lines::before {
+  position: absolute;
+  width: 40px;
+  height: 6px;
+  background-color: #272727;
+  z-index: 31;
+}
+
+.burger-menu__lines {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.burger-menu__lines::before {
+  content: "";
+  top: -12px;
+}
+
+.burger-menu__lines::after {
+  content: "";
+  top: 12px;
+}
+
+.burger-menu__active .burger-menu__lines {
+  background-color: transparent;
+}
+
+.burger-menu__active .burger-menu__lines::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.burger-menu__active .burger-menu__lines::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+.burger-menu__nav {
+  top: 0;
+  padding-top: 42px;
+  width: 100%;
+  position: fixed;
+  z-index: 30;
+  display: flex;
+  flex-flow: column;
+  height: auto;
+  background-color: #ffffff;
+  left: -100%;
+}
+
+.burger-menu__active .burger-menu__nav {
+  left: 0;
+}
+
+.burger-menu__link:hover {
+  filter: brightness(0.7);
+}
+
+.burger-menu__overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.burger-menu__active {
+  display: block;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+.footer .bg-gradient {
+  background: linear-gradient(172deg, #98e05f 0%, #0de3ac 100%);
+}
+
+.bg-header {
+  background: url("../img/bg-header.png") no-repeat center center;
+}
+
+@media (min-width: 320px) {
+  .bg-header {
+    height: 526px;
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-header {
+    height: 767px;
+  }
+}
+
+.banner-btn .bg-gradient {
+  background: linear-gradient(172deg, #98e05f 0%, #0de3ac 100%);
+}
+
+@media (min-width: 320px) {
+  .main-banner .main-title {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-banner .main-title {
+    width: 565px;
+  }
+}
+
+@media (min-width: 1320px) {
+  .main-banner .main-title {
+    width: 650px;
+  }
+}
+
+.main-banner button {
+  background: linear-gradient(172deg, #98e05f 0%, #0de3ac 100%);
+}
+
+.main-banner input {
+  box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.08);
+}
+
+.nav button {
+  background: linear-gradient(172deg, #98e05f 0%, #0de3ac 100%);
+}
+
+.interesno .name {
+  background: url("../img/inp-logo.png") no-repeat 98% center;
+  background-color: #f4f4f4;
+}
+
+.interesno .phone {
+  background: url("../img/inp-phone.png") no-repeat 98% center;
+  background-color: #f4f4f4;
+}
+
+.interesno .bg-gradient {
+  background: linear-gradient(172deg, #98e05f 0%, #0de3ac 100%);
+}
+
+.interesno .checkbox-round {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: fit-content;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+}
+
+.interesno .mark-check {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 50%;
+  position: relative;
+}
+
+.interesno .checkbox > input:checked + .mark-check::after {
+  content: "✓";
+  color: green;
+  font-size: 20px;
+  font-weight: 900;
+  position: absolute;
+  left: 6px;
+  top: -3px;
+  opacity: 1;
+}
+
+.interesno .round {
+  position: relative;
+}
+
+.podhodit button {
+  background: linear-gradient(172deg, #98e05f 0%, #0de3ac 100%);
+}
+
+.podhodit .card button {
+  opacity: 0;
+}
+
+.podhodit .card:hover button {
+  opacity: 1;
+}
+
+.tarif .select {
+  position: relative;
+  display: inline-block;
+}
+
+.tarif .select:after {
+  content: "\02C5";
+  padding: 0 8px;
+  position: absolute;
+  right: 8px;
+  top: 10px;
+  z-index: 1;
+  text-align: center;
+  pointer-events: none;
+  box-sizing: border-box;
+}
+
+.tarif select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.tarif .bg-gradient {
+  background: linear-gradient(172deg, #98e05f 0%, #0de3ac 100%);
+}
+
+.tarif span.title {
+  position: relative;
+  padding-left: 35px;
+}
+
+.tarif span.title:before {
+  display: flex;
+  align-self: center;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 19px;
+  background: url("../img/check.png") no-repeat center center;
+}
+
+/* NOTE - import here your style modules */
+.container-fluid {
+  max-width: 100%;
+}
+
+.container {
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.px-0 {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
