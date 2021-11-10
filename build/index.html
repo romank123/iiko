@@ -654,74 +654,94 @@ iiko</span>
 
 <!--block interesno-->
 <div class="container interesno">
+  <div class="flex flex-col md:flex-row items-stretch my-10">
+    <div class="block-1 md:w-1/2 w-full pr-3 my-3">
+      <div class="border-top-5">
+        <span
+          class="uppercase font-GothamProLight lg:text-54 md:text-46 text-30 color-a6 lg:leading-normal md:leading-none"
+        >
+          интересно? Переходите на лучшее с выгодой!
+        </span>
 
-    <div class="flex flex-col md:flex-row items-stretch my-10">
-
-        <div class="block-1 md:w-1/2 w-full pr-3 my-3">
-
-            <div class="border-top-5">
-
-                <span class="uppercase font-GothamProLight lg:text-54 md:text-46 text-30 color-a6 lg:leading-normal md:leading-none">интересно? Переходите на лучшее с выгодой!</span>
-
-                <p class="font-GothamProBold color-28 lg:text-22 md:text-14 text-base lg:leading-40 leading-normal color-28 py-5">
-                    Единая система для управления
-                    рестораном:
-                    от продаж и доставки, до финансов и лояльностью гостей. Все действия персонала, движение товаров
-                    и денег система фиксирует в реальном времени.</p>
-
-            </div>
-
-        </div>
-
-        <div class="block-2 md:w-1/2 w-full md:pl-3">
-
-            <div class="flex justify-end h-full">
-
-                <div class="flex flex-col md:w-3/4 w-full justify-between">
-
-                    <span class="font-GothamProMedium uppercase md:text-22 text-base color-28 pb-5">Свяжитесь с нами и вы
-удивитесь, что когда-то
-вы работали иначе</span>
-
-                    <form class="">
-                        <div class="mb-6">
-                            <div class="">
-                                <label class="" for="name"></label>
-                            </div>
-                            <div class="">
-                                <input class="font-GothamProRegular text-12 name appearance-none rounded-3xl w-full py-3 px-4 color-28 focus:outline-none"
-                                       placeholder="Ваше имя" id="name" type="text">
-                            </div>
-                        </div>
-                        <div class="mb-6">
-                            <div class="">
-                                <label class="" for="phone"></label>
-                            </div>
-                            <div class="">
-                                <input class="font-GothamProRegular text-12 phone appearance-none rounded-3xl w-full py-3 px-4 color-28 focus:outline-none"
-                                       placeholder="Телефон" id="phone" type="text">
-                            </div>
-                        </div>
-                        <div class="flex items-center mb-6 round">
-                            <label class="md:w-2/3 block text-gray-500 font-bold" for="checkbox"></label>
-                            <input class="mr-2 leading-tight checkbox-round" type="checkbox" id="checkbox">
-                            <span class="font-GothamProRegular text-12 color-28">Согласен(ен) с политикой конфиденциальности</span>
-                        </div>
-
-                    </form>
-                    <div class="flex items-center justify-center">
-                        <div class="pb-10 w-full md:w-auto">
-                            <button class="font-GothamProBold text-base uppercase color-f8 py-3 rounded-3xl w-full bg-gradient px-28"
-                                    type="button">
-                                Купить
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <p
+          class="font-GothamProBold color-28 lg:text-22 md:text-14 text-base lg:leading-40 leading-normal color-28 py-5"
+        >
+          Единая система для управления рестораном: от продаж и доставки, до
+          финансов и лояльностью гостей. Все действия персонала, движение
+          товаров и денег система фиксирует в реальном времени.
+        </p>
+      </div>
     </div>
+
+    <div class="block-2 md:w-1/2 w-full md:pl-3">
+      <div class="flex justify-end h-full">
+        <div class="flex flex-col md:w-3/4 w-full justify-between">
+          <span
+            class="font-GothamProMedium uppercase md:text-22 text-base color-28 pb-5"
+          >
+            Свяжитесь с нами и вы удивитесь, что когда-то вы работали иначе
+          </span>
+
+          <form class="">
+            <div class="mb-6">
+              <div class="">
+                <label class="" for="name"></label>
+              </div>
+              <div class="">
+                <input
+                  class="font-GothamProRegular text-12 name appearance-none rounded-3xl w-full py-3 px-4 color-28 focus:outline-none"
+                  placeholder="Ваше имя"
+                  id="name"
+                  type="text"
+                />
+              </div>
+            </div>
+            <div class="mb-6">
+              <div class="">
+                <label class="" for="phone"></label>
+              </div>
+              <div class="">
+                <input
+                  class="font-GothamProRegular text-12 phone appearance-none rounded-3xl w-full py-3 px-4 color-28 focus:outline-none"
+                  placeholder="Телефон"
+                  id="phone"
+                  type="text"
+                />
+              </div>
+            </div>
+            <div class="flex items-center mb-6 round checkbox justify-start">
+              <input
+                class="mr-2 leading-tight checkbox-round"
+                type="checkbox"
+                id="checkbox"
+              />
+              <div class="mark-check"></div>
+              <label
+                class="block text-gray-500 font-bold ml-2 flex-1"
+                for="checkbox"
+              >
+                <span class="font-GothamProRegular text-12 color-28">
+                  Согласен(ен) с политикой конфиденциальности
+                </span>
+              </label>
+            </div>
+          </form>
+          <div class="flex items-center justify-center">
+            <div class="pb-10 w-full lg:w-auto">
+              <button
+                class="font-GothamProBold text-base uppercase color-f8 py-3 rounded-3xl w-full bg-gradient w-full lg:px-28"
+                type="button"
+              >
+                Купить
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+
 <!--footer-->
 <footer class="footer bgc-f4 py-16">
     <div class="container">
